@@ -109,15 +109,14 @@ function load() {
 }
 
 function setColors(elements) {
-    console.log("a")
     for(let i = 0; i < elements.name.length; i++) {
         let el = document.getElementById(`list-${i}`)
         if(elements.importance[i] == 'urgent') {
             el.style.backgroundColor = "#d45b5f"
         } else if(elements.importance[i] == 'important') {
-            el.style.backgroundColor = "#bf8d50"
+            el.style.backgroundColor = "#ffdc82"
         } else if(elements.importance[i] == 'mild') {
-            el.style.backgroundColor = "#f1f748"
+            el.style.backgroundColor = "#f5fa64"
         } else if(elements.importance[i] == 'not') {
             el.style.backgroundColor = "#74e06e"
         }
