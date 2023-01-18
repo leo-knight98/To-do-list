@@ -39,21 +39,21 @@ h1 {
 }
 
 #elementToAdd {
-    width: 90%;
+    width: 70%;
     height: 30px;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 10px;
 }
 
 #add {
     height: 30px;
-    width: 5%;
+    width: 20%;
     border-radius: 0;
     border: none;
     padding: 0;
+    margin-right: 10px;
 }
 
 #list {
-    width: 65%;
     margin: 20px auto;
     background-color: #6e7a6b;
     padding: 5px;
@@ -63,10 +63,8 @@ h1 {
 }
 
 .element {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 100%;
     margin: 5px 0;
     padding: 5px 0;
 }
@@ -78,6 +76,29 @@ h1 {
 select {
     border: none;
     border-radius: 0;
-    width: 150px;
     margin-right: 5px;
+}
+
+@media(min-width: 968px) {
+    #elementToAdd {
+        margin-left: 15px;
+        width: 90%;
+    }
+
+    #add {
+        width: 5%;
+    }
+
+    .element {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #list {
+        width: 65%;
+    }
+
+    select {
+        width: 150px;
+    }
 }
